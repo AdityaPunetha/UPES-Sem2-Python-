@@ -1,0 +1,5 @@
+file = open("test.txt", "a")
+file.write(input("Enter word that needs to be appended: "))
+file.close()
+appended_file = open("test.txt", "r")
+print(appended_file.read())
