@@ -1,6 +1,7 @@
 from tkinter import *
 
-window = Tk()
-window.title("First program")
-label = Label(window, text="hello world").pack()
-window.mainloop()
+root = Tk()
+root.geometry('400x400')
+btn = Button(root, text='click me!', bd='5', command=root.destroy)
+btn.pack()
+root.mainloop()
