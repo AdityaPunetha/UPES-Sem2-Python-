@@ -1,14 +1,11 @@
+def click_me():
+    print("Button was clicked") 
+
 from tkinter import *
-
-
-def click():
-    print("Button was clicked")
-
-
 window = Tk()
-window.geometry('100x100')
-lbl = Label(window, text="Hello")
-lbl.grid(column=0, row=0)
-btn = Button(window, text="Click Me", bg="red", fg="white",command=click)
-btn.grid(column=1, row=0)
+window.geometry('500x400')
+window.title("First program")
+l=Label(window,text="Hello").pack()
+button = Button(window, text='Click me', bd=10,width=25,bg = "yellow",fg = "black",command=click_me)
+button.pack(padx=100, pady=50)
 window.mainloop()
